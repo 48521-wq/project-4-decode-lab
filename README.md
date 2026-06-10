@@ -1,5 +1,5 @@
-# DecodeLabs Internship — Project 2
-## Backend API Development | Batch 2026
+# DecodeLabs Internship — Project 3
+## Interactive Web Elements | Batch 2026
 
 ### 🚀 How to Run
 
@@ -12,63 +12,34 @@ Then open: **http://localhost:3000**
 
 ---
 
-### 📡 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/status` | Health check |
-| GET | `/api/messages` | Get all messages |
-| POST | `/api/messages` | Submit a message |
-| GET | `/api/messages/:id` | Get one message |
-| DELETE | `/api/messages/:id` | Delete a message |
-
----
-
-### 📦 POST /api/messages — Request Body
-
-```json
-{
-  "name": "Adnan Ali",
-  "email": "adnan@example.com",
-  "project": "responsive",
-  "message": "I want to build a website."
-}
-```
-
-### ✅ Success Response (201)
-
-```json
-{
-  "success": true,
-  "message": "Message received! We will reply within 24 hours.",
-  "data": {
-    "id": 1,
-    "name": "Adnan Ali",
-    "email": "adnan@example.com",
-    "project": "responsive",
-    "message": "I want to build a website.",
-    "receivedAt": "2026-06-02T18:00:00.000Z"
-  }
-}
-```
-
-### ❌ Error Response (400)
-
-```json
-{
-  "success": false,
-  "error": "Bad Request — name, email and message are required."
-}
-```
+### 💡 About
+This repository now contains **Project 3 — Interactive Web Elements** as described in the PDF assignment.
+It demonstrates:
+- Dark mode toggle with `localStorage`
+- Counter state management
+- Accordion interaction with `classList.toggle`
+- Live form validation and preview
+- Dynamic DOM updates using vanilla JavaScript
 
 ---
 
-### 🛠 Tech Stack
-- **Runtime:** Node.js
-- **Framework:** Express.js
-- **Frontend:** HTML + CSS + JavaScript (Project 1)
-- **Data:** In-memory store
+### ✅ What’s included
+- `index.html` — Project 3 landing page
+- `css/style.css` — styling for the interactive modules
+- `js/main.js` — JavaScript behavior and event handling
+- `public/index.html` — same project page for server delivery
 
 ---
 
-*Built with integrity. Validate Everything. Communicate Clearly. Respect the Architecture.*
+### 📦 Run locally
+```bash
+npm install
+npm start
+```
+
+Then open: **http://localhost:3000**
+
+---
+
+### 📌 Notes
+The server serves the frontend from `public/index.html` and delivers the Project 3 experience on the main branch.
